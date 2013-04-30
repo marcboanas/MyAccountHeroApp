@@ -46,7 +46,13 @@ font-size: 1.3em !important;
     }
 }
 
-input[type=text] {
+.field_with_errors {
+    input[type=text], input[type=password] {
+    background: red;
+    }
+}
+
+input[type=text], input[type=password] {
 height: 30px;
 width: 300px;
 margin: 8px;
@@ -816,6 +822,24 @@ background: none;
     margin-bottom: 10px;
     }
 }
+
+    button, input[type=submit] {
+    float: left;
+    display: block;
+    margin: 0px 0px 10px 10px;
+    font-family: caecilia-bold, helvetica, arial, sans-serif;
+    width: auto;
+    text-align: center;
+    font-size: 13px;
+    height: 30px;
+    border: 1px solid #b3b3b3;
+    background: #39a32f;
+    color: white;
+        &.cancel {
+        background: #ecf0f3;
+        color: black;
+        }
+    }
 
 div.button {
 font-family: caecilia-bold, helvetica, arial, sans-serif;
