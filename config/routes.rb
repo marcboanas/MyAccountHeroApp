@@ -1,5 +1,7 @@
 AccountHeroApp::Application.routes.draw do
     
+  get "users/new"
+
   root :to => 'static_pages#Home'
 
   match '/home' => 'static_pages#Home'
