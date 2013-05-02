@@ -46,6 +46,14 @@ font-size: 1.3em !important;
     }
 }
 
+i.icon-search {
+color: black;
+}
+
+i.icon-trash {
+color: black;
+}
+
 .field_with_errors {
     input[type=text], input[type=password] {
     background: red;
@@ -722,6 +730,7 @@ text-align: left;
 font-size: 11px;
 line-height: 20px;
 height: 20px;
+margin-left: 20px;
 }
 
 i.buttonIcon {

@@ -6,7 +6,11 @@
     
     <div class="tabTop"><i class="icon-reorder large white"></i></div>
     
-    <div class="textTop"><i class="icon-user large"></i> marcjohnboanas</div>
+    <% if signed_in? %>
+    
+    <div class="textTop"><i class="icon-user large"></i><%= " " + current_user.name.titleize %></div>
+    
+    <% end %>
 
 </div>
 
